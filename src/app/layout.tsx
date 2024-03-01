@@ -33,7 +33,7 @@ export default function RootLayout({
             <link rel="icon" href="/favicon.ico" />
         </Head>
         <body className={`${inter.className} ${poppins.variable}` }>
-        <div className="h-screen overflow-auto lg:h-screen p-2 w-full flex flex-col justify-start bg-gradient-to-b from-emerald-50 to-[rgb(239,239,239)]"> {/*to-[rgb(239,239,239)]*/}
+        <div className="h-full md:h-screen md:overflow-auto p-2 w-full flex flex-col justify-start bg-gradient-to-b from-emerald-50 to-orange-100"> {/*to-[rgb(239,239,239)]*/}
             <div>
                 <Navbar/>
             </div>
