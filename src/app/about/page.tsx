@@ -152,7 +152,7 @@ const AboutPage = () => {
                         <div className="text-gray-600 mt-4">
                             <p>{experience.responsibilities}</p>
                         </div>
-                        <div className="grid grid-cols-3 gap-8 md:gap-6 md:grid-cols-4 mt-6 justify-items-center">
+                        <div className="grid grid-cols-2 gap-8 md:gap-6 md:grid-cols-4 mt-6 justify-items-center">
                             { experience.techStack.map((technology, index) =>
                             <div key={index}>
                             <h2 className="whitespace-nowrap inline border border-black rounded-xl p-2 bg-gray-800 text-white">{technology}</h2>
