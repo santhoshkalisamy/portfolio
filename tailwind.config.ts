@@ -13,6 +13,30 @@ const config: Config = {
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
+      animation: {
+        slide: 'slide 2s infinite',
+        slideRight: 'slideRight 10s infinite alternate',
+        slideLeft: 'slideLeft 10s infinite alternate',
+
+      },
+      keyframes: {
+        slide: {
+          '0%': {transform: 'translateX(0)'},
+          '50%': {transform: 'translateX(20px)'},
+          '100%': {transform: 'translateX(0)'},
+        },
+        slideRight: {
+          '0%': { transform: 'translateX(0)' },
+          '100%': { transform: 'translateX(3%)' },
+        },
+        slideLeft: {
+          '0%': { transform: 'translateX(3%)' },
+          '100%': { transform: 'translateX(0)' },
+        },
+      },
+      fontFamily: {
+        sans: ["var(--font-poppins)"],
+      },
     },
   },
   plugins: [],
