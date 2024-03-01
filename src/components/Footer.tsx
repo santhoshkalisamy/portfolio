@@ -6,7 +6,7 @@ const Footer = () => {
             <h1 className="text-emerald-600">Made in 💚 with
                 <a className="underline underline-offset-2 mx-1" target="_blank" href="https://nextjs.org/">NextJs</a>
                 and
-                <a className="underline underline-offset-2 mx-1" target="_blank" href="https://tailwindcss.com/">Tailwind</a>
+                <a className="underline underline-offset-2 mx-1" target="_blank" href="https://tailwindcss.com/">Tailwind CSS</a>
             </h1>
         </footer>
 );

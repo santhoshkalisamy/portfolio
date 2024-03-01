@@ -11,13 +11,17 @@ const menuItems = [
         url: "/",
         title: "Home"
     },
-    {
-        url: "/portfolio",
-        title: "Portfolio"
-    },
+    // {
+    //     url: "/portfolio",
+    //     title: "Portfolio"
+    // },
     {
         url: "/about",
         title: "About"
+    },
+    {
+        url: "/skills",
+        title: "Skills"
     },
     {
         url: "/blog",
