@@ -48,13 +48,13 @@ const Navbar = () => {
                 </ul>
             </div>
             <div className="hidden md:flex flex-row gap-4">
-                <Link href="https://github.com/santhoshkalisamy">
+                <Link href="https://github.com/santhoshkalisamy" target="_blank">
                     <Image src="/github.png" alt="github logo" height={24} width={24}></Image>
                 </Link>
-                <Link href="https://www.linkedin.com/in/santhoshkalisamy/">
+                <Link href="https://www.linkedin.com/in/santhoshkalisamy/" target="_blank">
                     <Image src="/linkedin.png" alt="github logo" height={24} width={24}></Image>
                 </Link>
-                <Link href="https://www.instagram.com/santhosh_kalisamy/">
+                <Link href="https://www.instagram.com/santhosh_kalisamy/" target="_blank">
                     <Image src="/instagram.png" alt="github logo" height={24} width={24}></Image>
                 </Link>
             </div>
@@ -82,13 +82,13 @@ const Navbar = () => {
                                 <Link onClick={() => setMenuOpen(!menuOpen)} href={menuItem.url}>{menuItem.title}</Link>
                             </li>)}
                             <div className="flex flex-row gap-8 md:hidden mt-10">
-                                <Link href="https://github.com/santhoshkalisamy">
+                                <Link href="https://github.com/santhoshkalisamy" target="_blank">
                                     <Image className="bg-gray-50 ring-4 ring-white rounded" src="/github.png" alt="github logo" height={36} width={36}></Image>
                                 </Link>
-                                <Link href="https://www.linkedin.com/in/santhoshkalisamy/">
+                                <Link href="https://www.linkedin.com/in/santhoshkalisamy/" target="_blank">
                                     <Image className="bg-gray-50 ring-4 ring-white rounded" src="/linkedin.png" alt="github logo" height={36} width={36}></Image>
                                 </Link>
-                                <Link href="https://www.instagram.com/santhosh_kalisamy/">
+                                <Link href="https://www.instagram.com/santhosh_kalisamy/" target="_blank">
                                     <Image className="bg-gray-50 ring-4 ring-white rounded" src="/instagram.png" alt="github logo" height={36} width={36}></Image>
                                 </Link>
                             </div>
