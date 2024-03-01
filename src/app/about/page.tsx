@@ -8,9 +8,9 @@ const experiences = [
         role: "Software Development Engineer 3",
         location: "Chennai",
         responsibilities: "Roles and responsibilities. " +
-            "A picture gives a more personal touch. A portrait of you or a nice shot of you working on a new design. " +
-            "It’s the most original way to give visitors a sense of who you are. " +
-            "Make it simple but inviting.",
+            "Leading a team and working as a full stack developer for a Product team.\n" +
+            "Automating and Scheduling of routines using Java and Python and managing deployments on servers.\n" +
+            "Designing and Implementations of Web Services and Security Services.",
         techStack: ["Java", "SpringBoot", "NextJS", "React", "NodeJS", "RestAPI", "Splunk", "GraphQL", "Docker"]
 
     },
@@ -20,9 +20,9 @@ const experiences = [
         role: "Associate Technical Delivery Manager",
         location: "Chennai",
         responsibilities: "Roles and responsibilities. " +
-            "A picture gives a more personal touch. A portrait of you or a nice shot of you working on a new design. " +
-            "It’s the most original way to give visitors a sense of who you are. " +
-            "Make it simple but inviting.",
+            "Leading a team and working as a full stack developer for a Product team.\n" +
+            "Automating and Scheduling of routines using Java and Python and managing deployments on servers.\n" +
+            "Designing and Implementations of Web Services and Security Services.",
         techStack: ["Java", "Angular", "NodeJS", "SpringBoot", "MongoDB", "Postgresql", "ReactJS", "Python"]
 
     },
@@ -32,10 +32,10 @@ const experiences = [
         role: "Senior Software Engineer",
         location: "Madurai",
         responsibilities: "Roles and responsibilities. " +
-            "A picture gives a more personal touch. A portrait of you or a nice shot of you working on a new design. " +
-            "It’s the most original way to give visitors a sense of who you are. " +
-            "Make it simple but inviting.",
-        techStack: ["Java", "Python", "Ionic", "Swift", "Objective C"]
+            "Leading a team and working as a full stack developer for a Product team.\n" +
+            "Automating and Scheduling of routines using Java and Python and managing deployments on servers.\n" +
+            "Designing and Implementations of Web Services and Security Services.",
+       techStack: ["Java", "Python", "Ionic", "Swift", "Objective C"]
 
     },
     {
@@ -44,9 +44,9 @@ const experiences = [
         role: "Senior Software Engineer",
         location: "Chennai",
         responsibilities: "Roles and responsibilities. " +
-            "A picture gives a more personal touch. A portrait of you or a nice shot of you working on a new design. " +
-            "It’s the most original way to give visitors a sense of who you are. " +
-            "Make it simple but inviting.",
+            "Leading a team and working as a full stack developer for a Product team.\n" +
+            "Automating and Scheduling of routines using Java and Python and managing deployments on servers.\n" +
+            "Designing and Implementations of Web Services and Security Services.",
         techStack: ["Java", "Python", "Ionic", "Swift", "Objective C"]
 
     },
@@ -55,11 +55,11 @@ const experiences = [
     company: "Payoda Technologies",
     role: "Project Specialist",
     location: "Coimbatore",
-    responsibilities: "Roles and responsibilities. " +
-        "A picture gives a more personal touch. A portrait of you or a nice shot of you working on a new design. " +
-        "It’s the most original way to give visitors a sense of who you are. " +
-        "Make it simple but inviting.",
-    techStack: ["Java", "Python", "Ionic", "Swift", "Objective C"]
+        responsibilities: "Roles and responsibilities. " +
+            "Leading a team and working as a full stack developer for a Product team.\n" +
+            "Automating and Scheduling of routines using Java and Python and managing deployments on servers.\n" +
+            "Designing and Implementations of Web Services and Security Services.",
+   techStack: ["Java", "Python", "Ionic", "Swift", "Objective C"]
 
 }
 ]
@@ -81,12 +81,7 @@ const AboutPage = () => {
                             <p className="text-gray-600 font-semibold  leading-7">
                                 My name is <span className="font-extrabold text-emerald-800">Santhosh Kalisamy</span>.
                                 I am a computer science engineering graduate and a software developer with <b
-                                className="text-orange-500">10 years of experience</b>, and I am very passionate and
-                                dedicated to my work.
-
-                                With 10 years experience as a professional a graphic designer, I have acquired the
-                                skills and knowledge necessary to make your project a success. I enjoy every step of the
-                                design process, from discussion and collaboration.</p>
+                                className="text-orange-500">10 years of experience</b>, adept in both front-end and back-end development. Passionate about crafting innovative solutions for real-world challenges, I am a polyglot and avid learner of new technologies and languages. With a strong problem-solving mindset and hands-on Full Stack experience, I&apos;m eager to contribute my expertise to drive impactful results in a new opportunity.</p>
                         </div>
                     </div>
                     <div className="grid grid-cols-1 grid-rows-4 md:grid-cols-2 md:grid-rows-1 gap-8 mx-auto">
