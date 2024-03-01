@@ -34,7 +34,7 @@ export default function Home() {
                     <div className="w-full mx-auto">
                         <button
                             className="flex flex-row justify-center items-center gap-4 w-full font-extrabold whitespace-nowrap p-4 rounded ring-1 bg-gray-50 ring-black text-gray-700">
-                            <Link className="hover:text-xl transition-all duration-300" href="/portfolio">More about me</Link>
+                            <Link className="hover:text-xl transition-all duration-300" href="/about">More about me</Link>
                             <FaAnglesRight className="text-lg animate-slide"></FaAnglesRight>
                         </button>
                     </div>

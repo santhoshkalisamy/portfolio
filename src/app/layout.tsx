@@ -20,6 +20,9 @@ const poppins = Poppins({
 export const metadata: Metadata = {
     title: "Santhosh Kalisamy",
     description: "Santhosh Kalisamy's Portfolio",
+    icons: {
+        icon: "/icon.png",
+    },
 };
 
 export default function RootLayout({
