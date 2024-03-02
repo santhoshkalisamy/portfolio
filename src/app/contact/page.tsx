@@ -7,7 +7,7 @@ const ContactPage = () => {
             <div
                 className="grid grid-cols-1 lg:grid-cols-5 md:gap-6 items-center justify-center">
                 <div className="lg:col-span-2 mx-auto">
-                    <Image src="/contact.png" className="transform" alt="developer" height={512} width={512}></Image>
+                    <Image src="/contact.png" alt="developer" height={512} width={512}></Image>
                 </div>
                 <div className="lg:col-span-3 mx-auto flex flex-col gap-8 justify-center w-full p-10">
                     <div className="grid grid-cols-1 gap-0 md:px-4 w-full">
