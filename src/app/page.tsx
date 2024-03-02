@@ -32,11 +32,11 @@ export default function Home() {
 
                 <div className="flex gap-8 flex-col">
                     <div className="w-full mx-auto">
-                        <button
-                            className="flex flex-row justify-center items-center gap-4 w-full font-extrabold whitespace-nowrap p-4 rounded ring-1 bg-gray-50 ring-black text-gray-700">
-                            <Link className="hover:text-xl transition-all duration-300" href="/about">More about me</Link>
+                        <div
+                            className="flex flex-row justify-center items-center gap-4 w-full font-extrabold whitespace-nowrap rounded ring-1 bg-gray-50 ring-black text-gray-700">
+                            <Link className="p-4 hover:text-xl transition-all duration-300" href="/about">More about me</Link>
                             <FaAnglesRight className="text-lg animate-slide"></FaAnglesRight>
-                        </button>
+                        </div>
                     </div>
                     <div className="flex flex-row gap-4 mb-10">
                         <button

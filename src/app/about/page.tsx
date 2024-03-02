@@ -104,66 +104,71 @@ const AboutPage = () => {
                     </div>
                 </div>
             </div>
-            <div className="mt-10 ml-10 flex flex-col max-w-screen-sm">
-                <div className="flex flex-row justify-start items-center">
-                    <div className="h-4 w-4 rounded-full p-2 border-emerald-600 border-4"></div>
-                    <div className="h-2 w-2 bg-orange-400 rounded-full -translate-x-4"></div>
-                    <h1 className="font-bold text-orange-500 text-2xl">Education</h1>
-                </div>
-                <div className="flex flex-col mt-6">
-                    <div className="flex md:flex-row flex-col gap-2 md:gap-0 justify-between">
-                        <div className="flex flex-col">
-                            <h1 className="font-bold text-xl text-gray-600">
-                                Computer Science & Engineering
-                            </h1>
-                            <h2 className="font-semibold text-md text-gray-500">
-                                KGiSL Institute of Technology
-                            </h2>
-                        </div>
-                        <div
-                            className="flex justify-center items-center border-2 p-2 border-orange-500 rounded-3xl mr-10 md:mr-0">
-                            <span>2010 - 2014</span>
+            <div className="grid grid-cols-1 xl:grid-cols-12">
+                <div className="xl:col-span-6 mt-10 ml-10 flex flex-col max-w-screen-sm">
+                    <div className="flex flex-row justify-start items-center">
+                        <div className="h-4 w-4 rounded-full p-2 border-emerald-600 border-4"></div>
+                        <div className="h-2 w-2 bg-orange-400 rounded-full -translate-x-4"></div>
+                        <h1 className="font-bold text-orange-500 text-2xl">Education</h1>
+                    </div>
+                    <div className="flex flex-col mt-6">
+                        <div className="flex lg:flex-col gap-2 md:gap-0 justify-between">
+                            <div className="flex flex-col">
+                                <h1 className="font-bold text-xl text-gray-600">
+                                    Computer Science & Engineering
+                                </h1>
+                                <h2 className="font-semibold text-md text-gray-500">
+                                    KGiSL Institute of Technology
+                                </h2>
+                            </div>
+                            <div
+                                className="flex w-1/4 mt-5 justify-center items-center border-2 p-2 border-orange-500 rounded-3xl mr-10 md:mr-0">
+                                <span>2010 - 2014</span>
+                            </div>
                         </div>
                     </div>
+                </div>
+                <div className="xl:col-span-6 mt-10 ml-10 flex flex-col max-w-screen-sm">
+                    <div className="flex flex-row justify-start items-center">
+                        <div className="h-4 w-4 rounded-full p-2 border-emerald-600 border-4"></div>
+                        <div className="h-2 w-2 bg-orange-400 rounded-full -translate-x-4"></div>
+                        <h1 className="font-bold text-orange-500 text-2xl">Experience</h1>
+                    </div>
+                    {experiences.map((experience, index) =>
+                        <div key={index} className="grid grid-cols-12 mt-5">
+                            <div className="col-span-3 font-bold sm:translate-x-0">{experience.year}</div>
+                            <div className="col-span-1">
+                                <div className="h-4 w-4 rounded-full bg-orange-400 ring-4 ring-orange-300"></div>
+                                <div
+                                    className="h-full translate-x-1.5 -translate-y-1 w-1 rounded-full bg-orange-400"></div>
+                                <div
+                                    className="h-3 translate-x-1.5 -translate-y-1.5 w-1 rounded-full bg-orange-400"></div>
+                            </div>
+                            <div className="col-span-8 flex flex-col">
+                                <div>
+                                    <h1 className="font-bold text-xl text-gray-800">{experience.role}</h1>
+                                </div>
+                                <div className="flex flex-col md:flex-row gap-2">
+                                    <h2 className="font-semibold text-md text-gray-700">{experience.company},</h2>
+                                    <h2 className="font-semibold text-md text-gray-700">{experience.location}</h2>
+                                </div>
+                                <div className="text-gray-600 mt-4">
+                                    <p>{experience.responsibilities}</p>
+                                </div>
+                                <div
+                                    className="grid grid-cols-2 auto-cols-auto gap-8 md:gap-6 md:grid-cols-3 2xl:grid-cols-4 mt-6 justify-items-center">
+                                    {
+                                        experience.techStack.map((technology, index) =>
+                                        <div key={index}>
+                                            <h2 className="whitespace-nowrap inline border border-black rounded-xl p-2 bg-gray-800 text-white">{technology}</h2>
+                                        </div>)
+                                    }
+                                </div>
+                            </div>
+                        </div>)
+                    }
                 </div>
             </div>
-            <div className="mt-10 ml-10 flex flex-col max-w-screen-sm">
-                <div className="flex flex-row justify-start items-center">
-                    <div className="h-4 w-4 rounded-full p-2 border-emerald-600 border-4"></div>
-                    <div className="h-2 w-2 bg-orange-400 rounded-full -translate-x-4"></div>
-                    <h1 className="font-bold text-orange-500 text-2xl">Experience</h1>
-                </div>
-                { experiences.map((experience, index) =>
-                <div key={index} className="grid grid-cols-12 mt-5">
-                    <div className="col-span-2 font-bold">{experience.year}</div>
-                    <div className="col-span-1">
-                        <div className="h-4 w-4 rounded-full bg-orange-400 ring-4 ring-orange-300"></div>
-                        <div className="h-full translate-x-1.5 -translate-y-1 w-1 rounded-full bg-orange-400"></div>
-                        <div className="h-3 translate-x-1.5 -translate-y-1.5 w-1 rounded-full bg-orange-400"></div>
-                    </div>
-                    <div className="col-span-8 flex flex-col">
-                        <div>
-                            <h1 className="font-bold text-xl text-gray-800">{experience.role}</h1>
-                        </div>
-                        <div className="flex flex-col md:flex-row gap-2">
-                            <h2 className="font-semibold text-md text-gray-700">{experience.company},</h2>
-                            <h2 className="font-semibold text-md text-gray-700">{experience.location}</h2>
-                        </div>
-                        <div className="text-gray-600 mt-4">
-                            <p>{experience.responsibilities}</p>
-                        </div>
-                        <div className="grid grid-cols-2 gap-8 md:gap-6 md:grid-cols-4 mt-6 justify-items-center">
-                            { experience.techStack.map((technology, index) =>
-                            <div key={index}>
-                            <h2 className="whitespace-nowrap inline border border-black rounded-xl p-2 bg-gray-800 text-white">{technology}</h2>
-                            </div>)
-                            }
-                        </div>
-                    </div>
-                </div>)
-                }
-            </div>
-
         </div>
     );
 };
