@@ -122,7 +122,7 @@ const skills = [
             },
             {
                 name: "SQLite",
-                icon: "/sqlite.svg",
+                icon: "/sqllite.svg",
                 level: "Intermediate"
             },
             {
@@ -239,7 +239,7 @@ const skills = [
                 level: "Advanced"
             },
             {
-                name: "WebAssembly",
+                name: "Web Assembly",
                 icon: "/webassembly.png",
                 level: "Beginner"
             },
@@ -254,12 +254,12 @@ const skills = [
                 level: "Intermediate"
             },
             {
-                name: "Internationalization",
+                name: "I18N",
                 icon: "/i18n.png",
                 level: "Intermediate"
             },
             {
-                name: "Localization",
+                name: "L10N",
                 icon: "/l10n.png",
                 level: "Intermediate"
             },
@@ -371,9 +371,12 @@ const skills = [
 
 const SkillsPage = () => {
     return (
-        <div>
+        <div className="mx-auto">
             <div className="p-5">
                 <h1 className="text-4xl font-bold text-center text-orange-500 mb-5">Skills</h1>
+                <h2 className="text-gray-700 max-w-screen-md mx-auto my-12 text-center font-semibold">
+                    As a passionate programmer, my journey in the tech industry has not been confined to the boundaries of my job requirements. I have always been driven by an insatiable curiosity and a desire to explore the vast landscape of programming languages, tools, and technologies. While I may not claim expert-level proficiency in all of them, I have had the opportunity to work with and learn about a wide array of technologies throughout my career. This exposure has not only broadened my technical knowledge but also fostered a continuous learning mindset. I believe that every piece of technology I interact with, regardless of my proficiency level, contributes to my growth as a software developer and enriches my understanding of the digital world.
+                </h2>
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
                     {skills.map((skill, index) =>
                             <div key={index} className="bg-opacity-30 bg-white p-5 shadow-lg rounded-lg">
@@ -382,11 +385,11 @@ const SkillsPage = () => {
                         </div>
                         <h2 className="text-2xl font-bold text-center text-gray-800">{skill.section}</h2>
                         <div className="grid grid-cols-1 gap-2 text-gray-800 mt-5">
-                            <div key={index} className="grid grid-cols-2 md:grid-cols-4 gap-6">
+                            <div key={index} className="grid grid-cols-2 md:grid-cols-3 2xl:grid-cols-4 gap-6">
                                 {skill.skills.map((skill, index) =>
                                     <div key={index} className="flex flex-col bg-green-50 p-2 border-2 border-gray-200 shadow-lg rounded-xl gap-2 justify-center items-center text-center">
                                         <Image height={48} width={48} src={skill.icon} alt={skill.name}/>
-                                        <span className="block">{skill.name}</span>
+                                        <span className="">{skill.name}</span>
                                         <span className="text-xs font-semibold text-gray-500">{skill.level}</span>
                                     </div>)}
                             </div>

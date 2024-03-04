@@ -7,10 +7,14 @@ const experiences = [
         company: "Paypal",
         role: "Software Development Engineer 3",
         location: "Chennai",
-        responsibilities: "Roles and responsibilities. " +
-            "Leading a team and working as a full stack developer for a Product team.\n" +
-            "Automating and Scheduling of routines using Java and Python and managing deployments on servers.\n" +
-            "Designing and Implementations of Web Services and Security Services.",
+        responsibilities: [
+            "An individual contributor working primarily on Java and Spring stack.",
+            "Developing highly scalable financial solutions. Involved in end-to-end development and deployment process.",
+            "Collaborating with multiple stakeholders to understand the business requirements of the product.",
+            "Performing Code Reviews and delegating tasks to individuals based on the complexity of work.",
+            "Actively involved in design, development, and unit testing in accordance with established standards.",
+            "Contributed to development of an API simulator framework for end-to-end testing."
+        ],
         techStack: ["Java", "SpringBoot", "NextJS", "React", "NodeJS", "RestAPI", "Splunk", "GraphQL", "Docker"]
 
     },
@@ -19,10 +23,16 @@ const experiences = [
         company: "Accolite",
         role: "Associate Technical Delivery Manager",
         location: "Chennai",
-        responsibilities: "Roles and responsibilities. " +
-            "Leading a team and working as a full stack developer for a Product team.\n" +
-            "Automating and Scheduling of routines using Java and Python and managing deployments on servers.\n" +
-            "Designing and Implementations of Web Services and Security Services.",
+        responsibilities: [
+            "Worked directly with one of the leading shipping companies.",
+            "Worked as an Associate Technical Delivery Manager, managing a team of 5 members.",
+            "Worked on end-to-end development of a Crew Management System.",
+            "Implemented some of the complex features including a canvas-based room booking application in Angular.",
+            "Led a team and worked as a full stack developer for a Product team.",
+            "Automated and scheduled routines using Java and Python and managed deployments on servers.",
+            "Designed and implemented Web Services and Security Services.",
+            "Also worked on Node.js for certain parts of the project."
+        ],
         techStack: ["Java", "Angular", "NodeJS", "SpringBoot", "MongoDB", "Postgresql", "ReactJS", "Python"]
 
     },
@@ -31,37 +41,46 @@ const experiences = [
         company: "SMI",
         role: "Senior Software Engineer",
         location: "Madurai",
-        responsibilities: "Roles and responsibilities. " +
-            "Leading a team and working as a full stack developer for a Product team.\n" +
-            "Automating and Scheduling of routines using Java and Python and managing deployments on servers.\n" +
-            "Designing and Implementations of Web Services and Security Services.",
-       techStack: ["Java", "Python", "Ionic", "Swift", "Objective C"]
-
-    },
-    {
-        year: "2017-2018",
-        company: "Altimetrik",
-        role: "Senior Software Engineer",
-        location: "Chennai",
-        responsibilities: "Roles and responsibilities. " +
-            "Leading a team and working as a full stack developer for a Product team.\n" +
-            "Automating and Scheduling of routines using Java and Python and managing deployments on servers.\n" +
-            "Designing and Implementations of Web Services and Security Services.",
+        responsibilities: [
+            "Worked as a Senior Software Developer and Team Lead on a supply chain management project.",
+            "Responsible for end-to-end development of various new features, including database design and maintenance.",
+            "Worked on both frontend and backend. Backend was primarily developed using Java and Spring, with MongoDB and MySQL as data stores.",
+            "Implemented Ehcache for caching to improve application performance.",
+            "On the frontend side, worked with Angular for developing user interfaces."
+        ],
         techStack: ["Java", "Python", "Ionic", "Swift", "Objective C"]
 
     },
     {
-    year: "2014-2017",
-    company: "Payoda Technologies",
-    role: "Project Specialist",
-    location: "Coimbatore",
-        responsibilities: "Roles and responsibilities. " +
-            "Leading a team and working as a full stack developer for a Product team.\n" +
-            "Automating and Scheduling of routines using Java and Python and managing deployments on servers.\n" +
-            "Designing and Implementations of Web Services and Security Services.",
-   techStack: ["Java", "Python", "Ionic", "Swift", "Objective C"]
+        year: "2017-2018",
+        company: "Paypal [Contract via Altimetrik]",
+        role: "Senior Software Engineer",
+        location: "Chennai",
+        responsibilities: [
+            "Worked as a Senior Software Developer in a contract role, working directly at Paypal.",
+            "Involved in the integrations of different banks and card networks with Paypal services, primarily using Java and Spring Boot for development.",
+            "Contributed to the development of a monitoring dashboard using Node.js, Angular, Elasticsearch, and MongoDB.",
+            "Worked as an individual contributor."
+        ],
+        techStack: ["Java", "Python", "Ionic", "Swift", "Objective C"]
 
-}
+    },
+    {
+        year: "2014-2017",
+        company: "Payoda Technologies",
+        role: "Project Specialist",
+        location: "Coimbatore",
+        responsibilities : [
+            "Started my career as an iOS application developer, developing and maintaining various iOS applications.",
+            "Transitioned into a Hybrid application developer role, working with Ionic and Cordova frameworks to build cross-platform mobile applications.",
+            "Spent 6 months as a Python developer, working on various backend services and data processing tasks.",
+            "Moved into a Java developer position, where I worked on a Cloud Networking Application using Java, Spring, OSI, MySQL, Hadoop, HBase, and Angular. This role involved both development and maintenance of the application, as well as dealing with cloud networking complexities.",
+            "Progressed to a team lead role, where I was responsible for mentoring around 6 junior developers, guiding them through their tasks and helping them grow as professionals.",
+            "Received multiple spot awards and was recognized as the most valuable person during my tenure at Payoda for my contributions and leadership."
+        ],
+        techStack: ["Java", "Python", "Ionic", "Swift", "Objective C", "Spring", "MySQL", "Hadoop", "HBase", "Angular"]
+
+    }
 ]
 
 const AboutPage = () => {
@@ -81,7 +100,11 @@ const AboutPage = () => {
                             <p className="text-gray-600 font-semibold  leading-7">
                                 My name is <span className="font-extrabold text-emerald-800">Santhosh Kalisamy</span>.
                                 I am a computer science engineering graduate and a software developer with <b
-                                className="text-orange-500">10 years of experience</b>, adept in both front-end and back-end development. Passionate about crafting innovative solutions for real-world challenges, I am a polyglot and avid learner of new technologies and languages. With a strong problem-solving mindset and hands-on Full Stack experience, I&apos;m eager to contribute my expertise to drive impactful results in a new opportunity.</p>
+                                className="text-orange-500">10 years of experience</b>, adept in both front-end and
+                                back-end development. Passionate about crafting innovative solutions for real-world
+                                challenges, I am a polyglot and avid learner of new technologies and languages. With a
+                                strong problem-solving mindset and hands-on Full Stack experience, I&apos;m eager to
+                                contribute my expertise to drive impactful results in a new opportunity.</p>
                         </div>
                     </div>
                     <div className="grid grid-cols-1 grid-rows-4 md:grid-cols-2 md:grid-rows-1 gap-8 mx-auto">
@@ -153,15 +176,21 @@ const AboutPage = () => {
                                     <h2 className="font-semibold text-md text-gray-700">{experience.location}</h2>
                                 </div>
                                 <div className="text-gray-600 mt-4">
-                                    <p>{experience.responsibilities}</p>
+                                    <p>
+                                        <ul>
+                                            {experience.responsibilities.map((responsibility, index) => (
+                                                <li className="block" key={index}>▸ {responsibility}</li>
+                                            ))}
+                                        </ul>
+                                    </p>
                                 </div>
                                 <div
                                     className="grid grid-cols-2 auto-cols-auto gap-8 md:gap-6 md:grid-cols-3 2xl:grid-cols-4 mt-6 justify-items-center">
                                     {
                                         experience.techStack.map((technology, index) =>
-                                        <div key={index}>
-                                            <h2 className="whitespace-nowrap inline border border-black rounded-xl p-2 bg-gray-800 text-white">{technology}</h2>
-                                        </div>)
+                                            <div key={index}>
+                                                <h2 className="whitespace-nowrap inline border border-black rounded-xl p-2 bg-gray-800 text-white">{technology}</h2>
+                                            </div>)
                                     }
                                 </div>
                             </div>
