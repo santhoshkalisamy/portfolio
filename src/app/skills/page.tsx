@@ -1,108 +1,8 @@
 import React from 'react';
+import Image from "next/image";
 
 
 const skills = [
-    {
-        section: "Architecture",
-        icon: "/architecture.png",
-        skills: [
-            {
-                name: "Microservices",
-                icon: "/microservices.png",
-                level: "Advanced"
-            },
-            {
-                name: "REST",
-                icon: "/rest.png",
-                level: "Advanced"
-            },
-            {
-                name: "GraphQL",
-                icon: "/graphql.png",
-                level: "Beginner"
-            },
-            {
-                name: "Serverless",
-                icon: "/serverless.png",
-                level: "Beginner"
-            },
-            {
-                name: "Progressive Web Apps",
-                icon: "/pwa.png",
-                level: "Intermediate"
-            },
-            {
-                name: "Single Page Applications",
-                icon: "/spa.png",
-                level: "Intermediate"
-            },
-            {
-                name: "Websockets",
-                icon: "/websockets.png",
-                level: "Intermediate"
-            },
-            {
-                name: "WebRTC",
-                icon: "/webrtc.png",
-                level: "Beginner"
-            },
-            {
-                name: "Webhooks",
-                icon: "/webhooks.png",
-                level: "Advanced"
-            },
-            {
-                name: "WebAssembly",
-                icon: "/webassembly.png",
-                level: "Beginner"
-            },
-            {
-                name: "Authentication and Authorization",
-                icon: "/auth.png",
-                level: "Advanced"
-            },
-            {
-                name: "Caching",
-                icon: "/caching.png",
-                level: "Intermediate"
-            },
-            {
-                name: "Internationalization",
-                icon: "/i18n.png",
-                level: "Intermediate"
-            },
-            {
-                name: "Localization",
-                icon: "/l10n.png",
-                level: "Intermediate"
-            },
-            {
-                name: "Web Security",
-                icon: "/security.png",
-                level: "Intermediate"
-            },
-            {
-                name: "Data Structures and Algorithms",
-                icon: "/dsa.png",
-                level: "Advanced"
-            },
-            {
-                name: "Design Patterns",
-                icon: "/designpatterns.png",
-                level: "Advanced"
-            },
-            {
-                name: "HLD and LLD",
-                icon: "/hldlld.png",
-                level: "Advanced",
-            },
-            {
-                name: "ER Diagrams",
-                icon: "/erdiagrams.png",
-                level: "Intermediate"
-            },
-        ]
-    },
     {
         section: "Frontend",
         icon: "/frontend.png",
@@ -167,7 +67,7 @@ const skills = [
             {
                 name: "NodeJs",
                 icon: "/nodejs.png",
-                level: "Intermediate"
+                level: "Advanced"
             },
             {
                 name: "ExpressJs",
@@ -290,6 +190,107 @@ const skills = [
         ]
     },
     {
+        section: "Architecture",
+        icon: "/architecture.png",
+        skills: [
+            {
+                name: "Microservices",
+                icon: "/microservices.png",
+                level: "Advanced"
+            },
+            {
+                name: "REST",
+                icon: "/rest.png",
+                level: "Advanced"
+            },
+            {
+                name: "GraphQL",
+                icon: "/graphql.png",
+                level: "Beginner"
+            },
+            {
+                name: "Serverless",
+                icon: "/serverless.png",
+                level: "Beginner"
+            },
+            {
+                name: "Progressive Web Apps",
+                icon: "/pwa.png",
+                level: "Intermediate"
+            },
+            {
+                name: "Single Page Applications",
+                icon: "/spa.png",
+                level: "Intermediate"
+            },
+            {
+                name: "Websockets",
+                icon: "/websockets.png",
+                level: "Intermediate"
+            },
+            {
+                name: "WebRTC",
+                icon: "/webrtc.png",
+                level: "Beginner"
+            },
+            {
+                name: "Webhooks",
+                icon: "/webhooks.png",
+                level: "Advanced"
+            },
+            {
+                name: "WebAssembly",
+                icon: "/webassembly.png",
+                level: "Beginner"
+            },
+            {
+                name: "Authentication and Authorization",
+                icon: "/auth.png",
+                level: "Advanced"
+            },
+            {
+                name: "Caching",
+                icon: "/caching.png",
+                level: "Intermediate"
+            },
+            {
+                name: "Internationalization",
+                icon: "/i18n.png",
+                level: "Intermediate"
+            },
+            {
+                name: "Localization",
+                icon: "/l10n.png",
+                level: "Intermediate"
+            },
+            {
+                name: "Web Security",
+                icon: "/security.png",
+                level: "Intermediate"
+            },
+            {
+                name: "Data Structures and Algorithms",
+                icon: "/dsa.png",
+                level: "Advanced"
+            },
+            {
+                name: "Design Patterns",
+                icon: "/designpatterns.png",
+                level: "Advanced"
+            },
+            {
+                name: "HLD and LLD",
+                icon: "/hldlld.png",
+                level: "Advanced",
+            },
+            {
+                name: "ER Diagrams",
+                icon: "/erdiagrams.png",
+                level: "Intermediate"
+            },
+        ]
+    },
+    {
         section: "Tools",
         icon: "/tools.png",
         skills: [
@@ -325,7 +326,7 @@ const skills = [
             },
             {
                 name: "Insomnia",
-                icon: "/insomnia.png",
+                icon: "/insomnia.svg",
                 level: "Advanced"
             },
             {
@@ -352,7 +353,7 @@ const skills = [
     },
     {
         section: "Languages",
-        icon: "languages.png",
+        icon: "/languages.png",
         skills: [
             {
                 name: "Tamil",
@@ -374,23 +375,28 @@ const SkillsPage = () => {
             <div className="p-5">
                 <h1 className="text-4xl font-bold text-center text-orange-500 mb-5">Skills</h1>
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
-                    {skills.map((skill, index) => <div key={index} className="bg-white p-5 shadow-lg rounded-lg">
+                    {skills.map((skill, index) =>
+                            <div key={index} className="bg-opacity-30 bg-white p-5 shadow-lg rounded-lg">
                         <div className="flex flex-row justify-center">
-                            <img src={skill.icon} alt={skill.section} className="h-20 w-20"/>
+                            <Image height={48} width={48} src={skill.icon} alt={skill.section}/>
                         </div>
                         <h2 className="text-2xl font-bold text-center text-gray-800">{skill.section}</h2>
-                        <div className="grid grid-cols-1 gap-2 text-gray-800">
-                            {skill.skills.map((skill, index) => <div key={index} className="flex flex-row gap-2">
-                                <img src={skill.icon} alt={skill.name} className="h-5 w-5"/>
-                                <span>{skill.name}</span>
-                                <span className="text-xs font-semibold">{skill.level}</span>
-                            </div>)}
+                        <div className="grid grid-cols-1 gap-2 text-gray-800 mt-5">
+                            <div key={index} className="grid grid-cols-2 md:grid-cols-4 gap-6">
+                                {skill.skills.map((skill, index) =>
+                                    <div key={index} className="flex flex-col bg-green-50 p-2 border-2 border-gray-200 shadow-lg rounded-xl gap-2 justify-center items-center text-center">
+                                        <Image height={48} width={48} src={skill.icon} alt={skill.name}/>
+                                        <span className="block">{skill.name}</span>
+                                        <span className="text-xs font-semibold text-gray-500">{skill.level}</span>
+                                    </div>)}
+                            </div>
                         </div>
-                    </div>)}
-                </div>
-            </div>
-        </div>
-    );
-};
+                        </div>
+                        )}
+                    </div>
+                        </div>
+                        </div>
+                        );
+                    };
 
 export default SkillsPage;
