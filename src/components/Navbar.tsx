@@ -11,10 +11,6 @@ const menuItems = [
         url: "/",
         title: "Home"
     },
-    // {
-    //     url: "/portfolio",
-    //     title: "Portfolio"
-    // },
     {
         url: "/about",
         title: "About"
@@ -22,10 +18,6 @@ const menuItems = [
     {
         url: "/skills",
         title: "Skills"
-    },
-    {
-        url: "/blog",
-        title: "Blog"
     },
     {
         url: "/contact",
