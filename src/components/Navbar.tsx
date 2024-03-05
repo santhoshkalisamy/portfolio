@@ -1,6 +1,6 @@
 'use client'
 
-import React, {useState} from 'react';
+import React, {useEffect, useState} from 'react';
 import Link from "next/link";
 import Image from "next/image";
 import NavLink from "@/components/NavLink";
@@ -27,6 +27,13 @@ const menuItems = [
 
 const Navbar = () => {
     const [menuOpen, setMenuOpen] = useState(false);
+    useEffect(() => {
+        if (menuOpen) {
+            document.body.style.overflow = 'hidden';
+        } else {
+            document.body.style.overflow = 'unset';
+        }
+    }, [menuOpen]);
     return (
         <div
             className="h-24 text-gray-900 flex items-center justify-between px-4 lg:px-20 xl:px-48">
