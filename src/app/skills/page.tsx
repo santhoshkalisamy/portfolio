@@ -374,7 +374,7 @@ const SkillsPage = () => {
         <div className="mx-auto">
             <div className="p-5">
                 <h1 className="text-4xl font-bold text-center text-orange-500 mb-5">Skills</h1>
-                <h2 className="text-gray-700 max-w-screen-md mx-auto my-12 text-center font-semibold">
+                <h2 className="text-gray-700 max-w-screen-md mx-auto my-12 text-center font-semibold font-mono">
                     As a passionate programmer, my journey in the tech industry has not been confined to the boundaries of my job requirements. I have always been driven by an insatiable curiosity and a desire to explore the vast landscape of programming languages, tools, and technologies. While I may not claim expert-level proficiency in all of them, I have had the opportunity to work with and learn about a wide array of technologies throughout my career. This exposure has not only broadened my technical knowledge but also fostered a continuous learning mindset. I believe that every piece of technology I interact with, regardless of my proficiency level, contributes to my growth as a software developer and enriches my understanding of the digital world.
                 </h2>
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
