@@ -8,6 +8,7 @@ const inter = Inter({subsets: ["latin"]});
 import { Poppins } from 'next/font/google'
 import Footer from "@/components/Footer";
 import Head from "next/head";
+import {Analytics} from "@vercel/analytics/next";
 
 //👇 Configure our font object
 const poppins = Poppins({
@@ -36,6 +37,7 @@ export default function RootLayout({
             <link rel="icon" href="/favicon.ico" />
         </Head>
         <body className={`${inter.className} ${poppins.variable}` }>
+        <Analytics />
         <div className="h-full md:h-screen md:overflow-auto p-2 w-full flex flex-col justify-start bg-gradient-to-b from-emerald-50 to-orange-100"> {/*to-[rgb(239,239,239)]*/}
             <div>
                 <Navbar/>
