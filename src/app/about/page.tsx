@@ -48,7 +48,7 @@ const experiences = [
             "Implemented Ehcache for caching to improve application performance.",
             "On the frontend side, worked with Angular for developing user interfaces."
         ],
-        techStack: ["Java", "Python", "Ionic", "Swift", "Objective C"]
+        techStack: ["Java", "Springboot", "MongoDB", "ElasticSearch", "MySQL", "Angular"]
 
     },
     {
@@ -62,7 +62,7 @@ const experiences = [
             "Contributed to the development of a monitoring dashboard using Node.js, Angular, Elasticsearch, and MongoDB.",
             "Worked as an individual contributor."
         ],
-        techStack: ["Java", "Python", "Ionic", "Swift", "Objective C"]
+        techStack: ["Java", "SpringBoot", "NextJS", "React", "NodeJS", "RestAPI", "Splunk", "GraphQL", "Docker"]
 
     },
     {
